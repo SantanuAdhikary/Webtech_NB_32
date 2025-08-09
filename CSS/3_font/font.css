@@ -1,0 +1,48 @@
+
+*{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header{
+
+    background-color: aqua;
+    height: 200px;
+}
+
+
+header > p{
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+   
+}
+
+
+main > h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    color:red;
+    text-shadow: 4px -3px 2px black;
+}
+
+main > p{
+    text-align: justify;
+    text-transform: capitalize;
+    word-spacing: 5px;
+
+    text-indent: 50px;
+
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+section > h3{
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}

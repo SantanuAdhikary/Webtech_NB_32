@@ -1,0 +1,34 @@
+
+
+nav{
+
+    background-color: black;
+    color:white;
+}
+
+
+.outer{
+
+    background-color: skyblue;
+    height: 300px;
+    width: 600px;
+}
+
+.outer > .inner{
+    background-color: brown;
+    height: 150px;
+    width: 300px;
+}
+
+
+/*  descendent selector  */
+
+.outer h2{
+    color: white;
+}
+
+/*  direct child selector */
+
+.outer > h1{
+    color:green;
+}

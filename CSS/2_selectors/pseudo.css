@@ -1,0 +1,104 @@
+
+
+header > button{
+    background-color: gray;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*  Pseudoclass Selector */
+
+header > button:hover{
+
+    background-color: red;
+    color:black;
+}
+
+header > button:active{
+    background-color: green;
+    color:white;
+}
+
+header > ol > li:nth-child(4){
+    color:brown;
+}
+
+
+header > ol > li:nth-child(2n + 1)
+{
+    background-color: gray;
+}
+
+
+
+.box > h1:nth-child(3){
+    color:red;
+}
+
+
+main > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1.4px;
+    text-shadow: 2px 2px 1px blue;
+}
+
+main > p{
+    text-indent: 60px;
+    font-size: 19px;
+}
+
+
+/*  Pseudo element Selector */
+
+main > p::first-letter{
+    font-size: 35px;
+}
+
+main > p::first-line{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+main > h1::after{
+
+    content:"!!!"
+}
+
+
+main > h1::before{
+
+    content: "***";
+}
+
+
+
+
+main > p::selection{
+
+    background-color: black;
+    color:white;
+}
+
+
+main > ul > li::marker{
+
+    color:red;
+}
+
+
+main > ul > li:nth-child(2n)::marker
+{
+    color:blue;
+}
+
+
+
+/*  attribute selector */
+
+
+input[type="text"]{
+    background-color: green;
+}
