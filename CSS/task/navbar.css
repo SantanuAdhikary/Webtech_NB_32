@@ -1,0 +1,63 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    gap:30px;
+}
+
+nav > ul > li{
+
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
+
+nav > ul > li:hover{
+    color:orangered;
+}
+
+
+.right > button{
+   padding: 10px 30px;
+   border-radius: 8px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   border: none;
+   
+}
+
+nav > h1 > span{
+    color:red;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-right: 3px;
+}
+
+
+.right > button:nth-child(1)
+{
+    background-color: green;
+    color:white;
+}
+.right > button:nth-child(2)
+{
+    background-color: skyblue;
+}
