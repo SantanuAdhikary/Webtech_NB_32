@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+
+    height: 600px;
+    width: 450px;
+    background-color: bisque;
+    border: 3px solid black;
+
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: column; */
+
+
+    /* justify-content: center;
+    align-items: center;
+ gap:20px; */
+
+ justify-content: space-around;
+}
+
+
+.container > .box{
+    height: 90px;
+    width: 90px;
+    border: 2px solid green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+ 
+
+}
+
+
