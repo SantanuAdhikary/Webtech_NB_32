@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+   
+    display: flex;
+}
+
+.outer > .left{
+  
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .right{
+    flex-basis: 50%;
+    background-color: #6a6aeb;
+     border-top-left-radius: 50px;
+     border-bottom-left-radius: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap:30px;
+}
+
+.outer > .left > img{
+    height: 500px;
+}
+
+
+.right > .inner{
+    width: 390px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px black;
+}
+
+.inner > form > label{
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.inner > form > input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    outline: none;
+}
+
+form > button{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.inner > .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer > p{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.footer > a{
+    font-size: 18px;
+    color:blue;
+    text-decoration: none;
+}
+
+.right > h1{
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 2px 2px black;
+}
+
+
+form > button{
+    background-color: rgb(30, 194, 30);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+form > button:hover{
+    background-color: rgb(10, 152, 10);
+}
+
+input:focus{
+    border-color: blue;
+}
+
+input::placeholder{
+    font-size: 15px;
+}
