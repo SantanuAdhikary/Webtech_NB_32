@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+         .outer{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(red,yellow);
+         }
+
+         .inner{
+            height: 80%;
+            width: 90%;
+            background-color: white;
+         }
+
+         .inner > #box1{
+            background-color: blue;
+            height: 120px;
+            width: 120px;
+
+            position: relative;
+            top:40px;
+            z-index: 1;
+         }
+         .inner > #box2{
+            background-color: green;
+            height: 140px;
+            width: 140px;
+
+            position: relative;
+
+            z-index: 3;
+         }
+         .inner > #box3{
+            background-color: pink;
+            height: 150px;
+            width: 150px;
+
+            position: relative;
+            bottom:110px;
+            z-index: 2;
+         }
+    </style>
+</head>
+<body>
+    
+
+    <div class="outer">
+         
+        <div class="inner">
+            <div class="box" id="box1">box-1</div>
+            <div class="box" id="box2">box-2</div>
+            <div class="box" id="box3">box-3</div>
+        </div>
+    </div>
+</body>
+</html>
