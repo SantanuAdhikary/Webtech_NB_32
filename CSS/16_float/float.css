@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.box1{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+
+    float: right;
+}
+.box2{
+    height: 200px;
+    background-color: yellow;
+    
+}
+.box3{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+
+    float: left;
+}
+.box4{
+    height: 200px;
+    background-color: yellow;
+    clear: both;
+}
