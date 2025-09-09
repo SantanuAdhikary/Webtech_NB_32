@@ -54,3 +54,31 @@ main > .card{
     padding: 10px;
     box-shadow: 0px 4px 6px black;
 }
+
+main > .dark{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: black;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 50%;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.footer{
+    height: calc(100vh - 380px);
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}

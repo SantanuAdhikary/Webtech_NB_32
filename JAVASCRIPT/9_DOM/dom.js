@@ -73,3 +73,64 @@ console.log(cardss[2])
 cardss[2].innerHTML = "<h2> I am from js file</h2> <P> hii hello</P>"
 
 // cardss[2].innerText = "<h1> hi</h1>"
+
+
+
+// !  how to apply css 
+
+
+let items = document.getElementsByTagName("li")
+
+console.log(items)
+
+let about = items[1]
+
+console.log(about)
+
+about.style.color="red"
+about.style.textDecoration="underline"
+
+
+// !  how to add/ remove class 
+
+
+let firstCard = document.querySelector(".card")
+
+console.log(firstCard.classList)
+
+firstCard.classList.add("dark")
+
+
+console.log(firstCard.classList)
+
+firstCard.classList.remove("dark")
+
+
+// !  how to create any element 
+
+let div = document.createElement("div")
+
+div.classList.add("circle")
+
+
+// cardss[2].append(div)
+// cardss[2].prepend(div)
+
+// cardss[2].before(div)
+cardss[2].after(div)
+
+
+
+
+let footer = document.createElement("div")
+
+footer.classList.add("footer")
+
+footer.innerHTML = ` <p> this is footer from js file , dom example 2025</p>`
+
+
+let main = document.querySelector("main")
+
+console.log(main)
+
+main.after(footer)
