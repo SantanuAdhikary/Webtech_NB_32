@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch task</title>
+</head>
+<body>
+
+
+    <h2> products title</h2>
+
+    <ol>
+
+    </ol>
+    
+ 
+
+    <script>
+
+          let fetchedData =    fetch("https://fakestoreapi.com/products")
+
+          let ol = document.querySelector("ol")
+
+         
+
+          console.log(fetchedData)
+
+          fetchedData.then((data)=>{
+
+              console.log(data)
+
+              let jsondata = data.json()
+              console.log(jsondata)
+
+
+              jsondata.then((data)=>{
+
+                   console.log(data)    
+
+                   data.map((ele)=>{
+                    console.log(ele.title)
+
+                  let li = document.createElement("li")
+
+                  li.innerText = ele.title
+
+                  ol.append(li)
+
+
+                   })
+              })
+              .catch((err)=>{
+                console.log(err)
+              })
+
+          })
+          .catch((err)=>{
+            console.log(err)
+          })
+
+    </script>
+
+
+</body>
+</html>
