@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> event listener</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         header{
+            height: 250px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+         }
+
+         main{
+            height: 250px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+         }
+
+         main > input{
+            padding: 10px;
+            width: 300px;
+            border-radius: 10px;
+         }
+         main > .output{
+            width: 500px;
+            height: 100px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px black;
+            padding: 10px;
+         }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1> event listener</h1>
+        <p> Lorem ipsum dolor sit amet consectetur.</p>
+        <button class="btn"> get started</button>
+
+        <button class="btn2" onclick="a1()" onclick="a2()">button 2</button>
+
+
+        <button class="btn3">button 3</button>
+
+    </header>
+
+    <main>
+         <h2> keyboard event</h2>
+
+         <input type="text" id="inp1">
+
+         <div class="output">
+
+         </div>
+    </main>
+
+
+    <script src="./event2.js"></script>
+
+    
+</body>
+</html>

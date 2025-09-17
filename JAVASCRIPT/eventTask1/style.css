@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.outer{
+    height: 100vh;
+    position: relative;
+}
+
+.box{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border: 4px solid black;
+
+
+}
+
+
+
+#box1{
+    top:0;
+    background-color:red ;
+}
+
+#box2{
+    top:0;
+    right:0;
+    background-color:green ;
+}
+
+#box3{
+    bottom:0;
+    background-color:blue ;
+}
+
+#box4{
+    bottom:0;
+    right:0;
+    background-color:black ;
+    color:white;
+}
+
+#box5{
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color:yellow ;
+}
+
